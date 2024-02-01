@@ -1,0 +1,24 @@
+body{
+    padding-left: 2cm;
+}
+.leftAlign{
+    width: 70%;
+    float: left;
+}
+.RightAlign{
+    float: right; width: 25%
+}
+aside{
+    text-align: center;
+    margin: 10px;
+    height: 10px;
+}
+.fullalign{
+    width: 100%;
+    float: left;
+}
+footer{
+    width: 100%;
+    text-align:  center;
+    float: left;
+}

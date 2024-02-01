@@ -1,0 +1,30 @@
+form{
+    display: table; 
+    margin: auto; 
+}
+ol{
+    list-style: none;
+    margin: 0; 
+    padding: 0
+}
+ol li{
+    clear: both; 
+    margin: 0 0 10px 0; 
+    padding: 0; 
+}
+label{
+    float: left; 
+    width: 250px; 
+}
+input{
+    border-color: blue; 
+    border-width: 5px; 
+    
+}
+input[required]:invalid, input[pattern]:invalid{
+    border-color:  #a5340b;
+}
+
+input[required]:valid, input[pattern]:valid{
+    border-color: #0B9900
+}

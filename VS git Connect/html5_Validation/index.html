@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="/html5_Validation/Stylesheets/style.css">
+</head>
+<body>
+    <form id="myform" action="" method="post">
+        <fieldset>
+        <ol>
+            <li>
+                <label for="first_name" >First Name</label>
+                <input id="first_name" type="text" name="first_name" autofocus="true"  placeholder="'John'" required/>
+            </li>
+            <li>
+                <label for="last_name">Last Name</label>
+                <input id="last_name" type="text" name="last_name" placeholder="'Smith" required />
+            </li>
+            <li>
+                <label for="email_Id">Email</label>
+                <input id="email_Id" type="email" name="email_Id" placeholder="user@example.com" required />
+            </li>
+            <li>
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password" value="" autocomplete="off" placeholder="8-10 Characters" pattern="^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W]).*$" title="Password must be 8 or more characters with atleast one number, an uppercase letter, and one special charcter">
+            </li>
+            <li>
+                <label for="password_confirm">Password Confirmation</label>
+                <input id="password_confirm" type="password" name="password_confirm" value="" placeholder="Type once again your password. " autocomplete="off"  pattern="^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W]).*$" title="Password must be 8 or more characters with atleast one number, an uppercase letter, and one special charcter">
+            </li>
+            <li>
+                <input type="button" value="submit" class ="btnPost" />
+            </li>
+        </ol>
+        </fieldset>
+    </form>
+    
+</body>

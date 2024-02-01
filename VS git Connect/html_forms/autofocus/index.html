@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        ol{
+    list-style: none;
+    margin: 0; 
+    padding: 0
+}
+
+ol li{
+    clear: both; 
+    margin: 0 0 10px 0; 
+    padding: 0; 
+}
+
+label{
+    float: left; 
+    width: 200px; 
+}
+
+input{
+    border: 1px solid #333; 
+}
+
+input:focus{
+    background-color: lightgoldenrodyellows;
+}
+form{ 
+    display: table;
+    margin: 0 auto; 
+    width: 250px; 
+}
+    </style>
+</head>
+<body>
+    <form method="post" action="/html_forms/autofocus/index.html">
+        <fieldset id="create_New_Account">
+        <legend>Create New Account</legend>
+            <ol>
+            <li>
+            <label for="first_name" >First Name</label>
+            <input type="text" name="first_name" autofocus="true" id="first_name" placeholder="'John'">
+        </li>
+        <li>
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" id="first_name" placeholder="'Smith">
+        </li>
+        <li>
+            <label for="email_Id">Email</label>
+            <input type="email" name="email_Id" id="email_Id" placeholder="user@example.com">
+        </li>
+        <li>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" autocomplete="off" placeholder="8-10 Characters">
+        </li>
+        <li>
+            <label for="confirm_pass">Password Confirmation</label>
+            <input type="text" name="confirm_pass" id="confirm_pass" placeholder="Type your Password again">
+        </li>
+        <li>
+            <button type="submit" value = "Sign Up"> Sign Up</button>
+        </li>
+        </ol>
+        </fieldset>
+    </form>
+    
+</body>
